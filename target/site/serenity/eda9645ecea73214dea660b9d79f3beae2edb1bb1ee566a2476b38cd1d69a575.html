@@ -148,7 +148,7 @@
             $("#requirements-tabs").tabs();
             $("#test-tabs").tabs();
 
-            var requirementsTree = [{"text":"Login","type":"feature","href":"eda9645ecea73214dea660b9d79f3beae2edb1bb1ee566a2476b38cd1d69a575.html","nodes":[{"text":"Iniciar Sesión","type":"feature","href":"8fe79439c2107e7660bcd722d5cb6f7e18f497af34ec4ac2e21025fab49e56f8.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027fa fa-check-circle-o success-icon \u0027 title\u003d\u0027SUCCESS\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}],"selectable":false,"tags":["","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 feature\u003c/span\u003e"]}];
+            var requirementsTree = [{"text":"Login","type":"feature","href":"eda9645ecea73214dea660b9d79f3beae2edb1bb1ee566a2476b38cd1d69a575.html","nodes":[{"text":"Iniciar Sesión","type":"feature","href":"8fe79439c2107e7660bcd722d5cb6f7e18f497af34ec4ac2e21025fab49e56f8.html","nodes":[],"selectable":false,"tags":["\u003ca href\u003d\u0027##beforetable\u0027\u003e\u003ci class\u003d\u0027fa fa-times-circle failure-icon \u0027 title\u003d\u0027FAILURE\u0027\u003e\u003c/i\u003e\u003c/a\u003e","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 scenario\u003c/span\u003e"]}],"selectable":false,"tags":["","\u003cspan class\u003d\u0027feature-count\u0027\u003e1 feature\u003c/span\u003e"]}];
 
             $('#tree').treeview({
                 data: requirementsTree,
@@ -179,7 +179,7 @@
         <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
         <div id="projectname-banner" style="float:right">
             <span class="projectname">
-                <span class="projecttitle">com.co.pagina_pragma</span>
+                <span class="projecttitle">com.pragma.automationPractice</span>
                 <span class="projectsubtitle"></span>
             </span>
         </div>
@@ -217,7 +217,7 @@
             <a href="#"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-02-2022 10:59</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-02-2022 17:55</span>
     <br style="clear:left"/>
 </div>
 
@@ -287,10 +287,10 @@
                                             </div>
                                             <script>
 
-                                                var labels = ['100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
+                                                var labels = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '100%', ' ', ' ', ' ', ' ', ' '];
                                                 // Our series array that contains series objects or in this case series data arrays
 
-                                                var series = [{meta: 'Passing tests (automated)', value: 1}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+                                                var series = [{meta: 'Passing tests (automated)', value: 0}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 1}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
 
                                                 // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
                                                 // as you saw in the previous example
@@ -327,12 +327,11 @@
                                             </thead>
                                             <tbody>
                                             <tr>
-                                                                    <td class="aggregate-result-count">
-                                                                        <a href="99a89d3555e0cab30d62703923bee2074fe6287441799f521489fc1a760aca30.html"><i
-                                                                                class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing</a>
+                                                                    <td class="aggregate-result-count"><i
+                                                                            class='fa fa-check-circle-o success-icon'></i>&nbsp;Passing
                                                                     </td>
-                                                <td class="automated-stats">1</td>
-                                                <td class="automated-stats">100%</td>
+                                                <td class="automated-stats">0</td>
+                                                <td class="automated-stats"> </td>
                                             </tr>
                                             <tr>
                                                                     <td class="aggregate-result-count"><i
@@ -356,19 +355,19 @@
                                                 <td class="automated-stats"> </td>
                                             </tr>
                                             <tr>
-                                                                            <td colspan="3"><i
-                                                                                class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
+                                                                             <td colspan="3"><a href="73a3df654e7d8fff406bd49dbabf16185b789d9582abaa69f8d78c52aa9371f5.html"><i
+                                                                                    class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
                                                                             </td>
 
                                             </tr>
 
                                             <tr>
-                                                                <td class="aggregate-result-count indented-error-category">
-                                                                    <i
-                                                                            class='fa fa-times-circle failure-icon'></i>&nbsp;Failed
-                                                                </td>
-                                                <td class="automated-stats">0</td>
-                                                <td class="automated-stats"> </td>
+                                                                    <td class="aggregate-result-count indented-error-category">
+                                                                        <a href="6937b7d59a855d76b530c877bfffbf1a7c0a6576de15a6d0285ea8db84867456.html"><i
+                                                                                class='fa fa-times-circle failure-icon'></i>&nbsp;Failed</a>
+                                                                    </td>
+                                                <td class="automated-stats">1</td>
+                                                <td class="automated-stats">100%</td>
                                             <tr>
                                                                 <td class="aggregate-result-count indented-error-category">
                                                                     <i
@@ -408,11 +407,11 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr>
-                                                        <td>12s</td>
-                                                        <td>12ms</td>
-                                                        <td>12s</td>
-                                                        <td>12s</td>
-                                                        <td>12s</td>
+                                                        <td>585ms</td>
+                                                        <td>0ms</td>
+                                                        <td>460ms</td>
+                                                        <td>460ms</td>
+                                                        <td>585ms</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -454,8 +453,8 @@
             <td>1</td>
             <td>0</td>
             <td>
-                <span class="status_icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
-                <span style="display:none">1</span>
+                <span class="status_icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a></span>
+                <span style="display:none">3</span>
             </td>
 
             <td width="165px">
@@ -464,18 +463,18 @@
 <table>
     <tr>
         <td width="40px" style="padding-top:4px;">
-            <div class="small" style="text-align:right;">100%</div>
+            <div class="small" style="text-align:right;">0%</div>
         </td>
         <td style="min-width:12.5em;">
             <div class="progress">
                 <div class="progress-bar" role="progressbar"
-                     style="width: 100%; background-color:#30cb23;"
-                     aria-valuenow="1"
+                     style="width: 0%; background-color:#30cb23;"
+                     aria-valuenow="0"
                      aria-valuemin="0"
                      aria-valuemax="1"
                      title="  - Total tests: 1
-  - Passing tests: 1 (100%)
-  - Failing tests: 0 (0%)
+  - Passing tests: 0 (0%)
+  - Failing tests: 1 (100%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
@@ -487,8 +486,8 @@
                      aria-valuemin="0"
                      aria-valuemax="1"
                      title="  - Total tests: 1
-  - Passing tests: 1 (100%)
-  - Failing tests: 0 (0%)
+  - Passing tests: 0 (0%)
+  - Failing tests: 1 (100%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
@@ -500,8 +499,8 @@
                      aria-valuemin="0"
                      aria-valuemax="1"
                      title="  - Total tests: 1
-  - Passing tests: 1 (100%)
-  - Failing tests: 0 (0%)
+  - Passing tests: 0 (0%)
+  - Failing tests: 1 (100%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
@@ -513,21 +512,21 @@
                      aria-valuemin="0"
                      aria-valuemax="1"
                      title="  - Total tests: 1
-  - Passing tests: 1 (100%)
-  - Failing tests: 0 (0%)
+  - Passing tests: 0 (0%)
+  - Failing tests: 1 (100%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
   - Ignored or skipped tests: 0 (0%)">
                 </div>
                 <div class="progress-bar" role="progressbar"
-                     style="width: 0%; background-color:#f8001f;"
-                     aria-valuenow="0"
+                     style="width: 100%; background-color:#f8001f;"
+                     aria-valuenow="1"
                      aria-valuemin="0"
                      aria-valuemax="1"
                      title="  - Total tests: 1
-  - Passing tests: 1 (100%)
-  - Failing tests: 0 (0%)
+  - Passing tests: 0 (0%)
+  - Failing tests: 1 (100%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
@@ -539,8 +538,8 @@
                      aria-valuemin="0"
                      aria-valuemax="1"
                      title="  - Total tests: 1
-  - Passing tests: 1 (100%)
-  - Failing tests: 0 (0%)
+  - Passing tests: 0 (0%)
+  - Failing tests: 1 (100%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
@@ -552,8 +551,8 @@
                      aria-valuemin="0"
                      aria-valuemax="1"
                      title="  - Total tests: 1
-  - Passing tests: 1 (100%)
-  - Failing tests: 0 (0%)
+  - Passing tests: 0 (0%)
+  - Failing tests: 1 (100%)
   - Tests with errors: 0 (0%)
   - Compromised tests 0 (0%)
   - Pending tests: 0 (0%)
@@ -590,7 +589,7 @@
                                                 </tr>
                                                 </thead>
                                                 <tbody>
-                                                <tr class="scenario-result SUCCESS">
+                                                <tr class="scenario-result FAILURE">
                                                     <td>
                                                             <a href="8fe79439c2107e7660bcd722d5cb6f7e18f497af34ec4ac2e21025fab49e56f8.html">Iniciar Sesión</a>
                                                     </td>
@@ -599,11 +598,11 @@
                                                                (1 example)
                                                     </td>
                                                     <td>3</td>
-                                                    <td>10:59:58</td>
-                                                    <td>12s 590ms</td>
+                                                    <td>17:55:29</td>
+                                                    <td>585ms</td>
                                                     <td>
-                                                            <a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a> <span
-                                                                style="display:none">SUCCESS</span>
+                                                            <a href='##beforetable'><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></a> <span
+                                                                style="display:none">FAILURE</span>
                                                     </td>
                                                 </tr>
                                                 </tbody>

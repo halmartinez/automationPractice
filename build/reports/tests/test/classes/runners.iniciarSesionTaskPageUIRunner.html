@@ -86,9 +86,40 @@
 <h2>Standard output</h2>
 <span class="code">
 <pre>
-1 Scenarios (?[32m1 passed?[0m)
-3 Steps (?[32m3 passed?[0m)
-0m13,306s
+?[31mFailed scenarios:?[0m
+file:///C:/Users/hugo.martinez/IdeaProjects/automationPracticeEjercicio/src/test/resources/features/login/login.feature:11 # Iniciar sesión de forma exitosa
+
+1 Scenarios (?[31m1 failed?[0m)
+3 Steps (?[31m1 failed?[0m, ?[36m2 skipped?[0m)
+0m1,187s
+
+
+java.lang.AssertionError: Invalid URL: index.php
+	at net.serenitybdd.core.pages.PageUrls.updatedFullUrl(PageUrls.java:222)
+	at net.serenitybdd.core.pages.PageUrls.addBaseUrlTo(PageUrls.java:206)
+	at net.serenitybdd.core.pages.PageUrls.getStartingUrl(PageUrls.java:52)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:813)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:802)
+	at net.serenitybdd.screenplay.actions.OpenPage.performAs(OpenPage.java:22)
+	at net.serenitybdd.screenplay.actions.OpenPage$ByteBuddy$dIgdTZOl.performAs$accessor$yjvGTQxY(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at net.serenitybdd.screenplay.actions.OpenPage$ByteBuddy$dIgdTZOl.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
+	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:165)
+	at stepDefinitions.inciarSesionStepDefinition.elUsuarioDeseaIniciarSesionEnLaAplicacion(inciarSesionStepDefinition.java:47)
+	at ✽.El usuario Hugo Alberto desea iniciar sesion en la aplicacion(file:///C:/Users/hugo.martinez/IdeaProjects/automationPracticeEjercicio/src/test/resources/features/login/login.feature:6)
 
 
 </pre>
@@ -99,7 +130,7 @@
 <span class="code">
 <pre>[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/hugo.martinez/IdeaProjects/automationPracticeEjercicio/src/test/resources/features/login/login.feature
 [Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Users/hugo.martinez/IdeaProjects/automationPracticeEjercicio/src/test/resources/features/login/login.feature is not under the 'features' directory. Requirements report will not be correctly generated!
-[Test worker] INFO  - ?[96m
+[Test worker] INFO  - 
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -114,17 +145,10 @@
  Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
  Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
 -------------------------------------------------------------------------------------
-?[0m
+
 [Test worker] INFO  - Test Suite Started: Iniciar Sesión
-[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@b13c600: Generating report for test outcome: Iniciar Sesión:Iniciar sesión de forma exitosa
-[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@102ee705: Generating report for test outcome: Iniciar Sesión:Iniciar sesión de forma exitosa
-[pool-2-thread-1] INFO serenity.reporting - 
-----------------------------------------------
-| TEST NAME:   ?[1mIniciar sesión de forma exitosa?[0m
-| RESULT:      ?[92mPassing?[0m
-| REQUIREMENT: Iniciar Sesión
-| REPORT:      ?[96mfile:///C:/Users/hugo.martinez/IdeaProjects/automationPracticeEjercicio/target/site/serenity/b6fda2b5ba2529a66541983329f8698713c81192b84e739f542a40d61d462eb0.html?[0m
-----------------------------------------------
+[pool-1-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.json.JSONTestOutcomeReporter@1d6dc2b8: Generating report for test outcome: Iniciar Sesión:Iniciar sesión de forma exitosa
+[pool-2-thread-1] INFO net.thucydides.core.reports.ReportService - net.thucydides.core.reports.html.HtmlAcceptanceTestReporter@2ac0cb64: Generating report for test outcome: Iniciar Sesión:Iniciar sesión de forma exitosa
 </pre>
 </span>
 </div>
@@ -136,7 +160,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.2</a> at 21/02/2022, 11:00:16 a. m.</p>
+<a href="http://www.gradle.org">Gradle 7.2</a> at 22/02/2022, 5:55:31 p. m.</p>
 </div>
 </div>
 </body>

@@ -1,1 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Iniciar Sesión" skipped="0" tests="1" time="12.59" timestamp="2022-02-21 10:59:58"><testcase name="Iniciar sesión de forma exitosa"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Iniciar Sesión" skipped="0" tests="1" time="0.59" timestamp="2022-02-22 05:55:29"><testcase name="Iniciar sesión de forma exitosa"><failure message="Invalid URL: index.php" type="java.lang.AssertionError">Invalid URL: index.php</failure><system-err>Invalid URL: index.php&#13;
+stepDefinitions.inciarSesionStepDefinition.elUsuarioDeseaIniciarSesionEnLaAplicacion(inciarSesionStepDefinition.java:47)&#13;
+✽.El usuario Hugo Alberto desea iniciar sesion en la aplicacion(file:///C:/Users/hugo.martinez/IdeaProjects/automationPracticeEjercicio/src/test/resources/features/login/login.feature:6)&#13;
+</system-err></testcase></testsuite>

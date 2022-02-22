@@ -5,7 +5,7 @@ import net.serenitybdd.screenplay.targets.Target;
 import net.thucydides.core.annotations.DefaultUrl;
 import org.openqa.selenium.By;
 
-@DefaultUrl("http://automationpractice.com/")
+@DefaultUrl("index.php")
 public class paginaPrincipalPageUI extends PageObject
 {
     public static final Target LNK_SIGN_IN =
