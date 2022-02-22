@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Iniciar Sesión</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Iniciar Sesión</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Iniciar Sesión</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">13.048s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Iniciar sesión de forma exitosa</td>
+<td class="success">13.048s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[92m|-- Example 1: {usuario=&quot;056.0@hotmail.com&quot;, contrasena=&quot;123456&quot;}?[0m
+?[92m|---- Dado El usuario Hugo Alberto desea iniciar sesion en la aplicacion?[0m
+?[92m|------ Hugo Alberto opens the Pagina principal page ui?[0m
+?[92m|---- Cuando Ingresa el usuario &quot;056.0@hotmail.com&quot; y contrasena &quot;123456&quot;?[0m
+?[92m|------ Hugo alberto iniciar sesion task?[0m
+?[92m|-------- Hugo Alberto clicks on Enlace para iniciar de sesión?[0m
+?[92m|-------- Hugo Alberto enters '056.0@hotmail.com' into Input del correo?[0m
+?[92m|-------- Hugo Alberto enters '123456' into Input de la contraseña?[0m
+?[92m|-------- Hugo Alberto clicks on Clic en el botón para iniciar sesión?[0m
+?[92m|---- Entonces Ingresa a pagina principal y valida el usuario prueba automatizada?[0m
+usuarioLogueado: prueba automatizada
+loginExitoso(): questions.verificarUsuarioLogueadoQuestion$$Lambda$779/0x000000080112ac48@287f1aaf
+?[92m|------ Then verificar usuario logueado question$$ lambda$779/0x000000080112ac48 should be 'prueba automatizada'?[0m
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/hugo.martinez/IdeaProjects/automationPracticeEjercicio/src/test/resources/features/login/login.feature
+[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Users/hugo.martinez/IdeaProjects/automationPracticeEjercicio/src/test/resources/features/login/login.feature is not under the 'features' directory. Requirements report will not be correctly generated!
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Iniciar sesión de forma exitosa(iniciar-sesión;iniciar-sesión-de-forma-exitosa)
+--------------------------------------------------------------------------------
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using msedgedriver 98.0.1108.56 (resolved driver for Edge 98)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as C:\Users\hugo.martinez\.cache\selenium\msedgedriver\win64\98.0.1108.56\msedgedriver.exe
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {browserName: MicrosoftEdge, loggingPrefs: org.openqa.selenium.logging..., ms:edgeOptions: {}}
+Starting MSEdgeDriver 98.0.1108.56 (9a336a18eae89157b3c7ea0568a9cbced8ebc3f7) on port 1070
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+feb. 21, 2022 11:00:01 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] INFO  - ?[92m
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Iniciar sesión de forma exitosa
+----------------------------------------------------------------------?[0m
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.2</a> at 21/02/2022, 11:00:16 a. m.</p>
+</div>
+</div>
+</body>
+</html>
