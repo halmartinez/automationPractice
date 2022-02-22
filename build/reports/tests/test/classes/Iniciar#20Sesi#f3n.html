@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.898s</div>
+<div class="counter">14.809s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,52 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard error</a>
+<a href="#tab1">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="Iniciar sesión de forma exitosa"></a>
-<h3 class="failures">Iniciar sesión de forma exitosa</h3>
-<span class="code">
-<pre>java.lang.AssertionError: Invalid URL: index.php
-	at net.serenitybdd.core.pages.PageUrls.updatedFullUrl(PageUrls.java:222)
-	at net.serenitybdd.core.pages.PageUrls.addBaseUrlTo(PageUrls.java:206)
-	at net.serenitybdd.core.pages.PageUrls.getStartingUrl(PageUrls.java:52)
-	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:813)
-	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:802)
-	at net.serenitybdd.screenplay.actions.OpenPage.performAs(OpenPage.java:22)
-	at net.serenitybdd.screenplay.actions.OpenPage$ByteBuddy$dIgdTZOl.performAs$accessor$yjvGTQxY(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:492)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:472)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:445)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:201)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:188)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:76)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at net.serenitybdd.screenplay.actions.OpenPage$ByteBuddy$dIgdTZOl.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:252)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:233)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:178)
-	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:165)
-	at stepDefinitions.inciarSesionStepDefinition.elUsuarioDeseaIniciarSesionEnLaAplicacion(inciarSesionStepDefinition.java:47)
-	at ✽.El usuario Hugo Alberto desea iniciar sesion en la aplicacion(file:///C:/Users/hugo.martinez/IdeaProjects/automationPracticeEjercicio/src/test/resources/features/login/login.feature:6)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -117,13 +78,13 @@
 </tr>
 </thead>
 <tr>
-<td class="failures">Iniciar sesión de forma exitosa</td>
-<td class="failures">0.898s</td>
-<td class="failures">failed</td>
+<td class="success">Iniciar sesión de forma exitosa</td>
+<td class="success">14.809s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
 <pre>[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/hugo.martinez/IdeaProjects/automationPracticeEjercicio/src/test/resources/features/login/login.feature
@@ -136,16 +97,24 @@
 
 Iniciar sesión de forma exitosa(iniciar-sesión;iniciar-sesión-de-forma-exitosa)
 --------------------------------------------------------------------------------
-[Test worker] ERROR  - 
-  _____   ___   ___   _____     ___     _     ___   _      ___   ___  
- |_   _| | __| / __| |_   _|   | __|   /_\   |_ _| | |    | __| |   \ 
-   | |   | _|  \__ \   | |     | _|   / _ \   | |  | |__  | _|  | |) |
-   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___| |____| |___| |___/ 
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using msedgedriver 98.0.1108.56 (resolved driver for Edge 98)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as C:\Users\hugo.martinez\.cache\selenium\msedgedriver\win64\98.0.1108.56\msedgedriver.exe
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {browserName: MicrosoftEdge, loggingPrefs: org.openqa.selenium.logging..., ms:edgeOptions: {}}
+Starting MSEdgeDriver 98.0.1108.56 (9a336a18eae89157b3c7ea0568a9cbced8ebc3f7) on port 13995
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+feb. 22, 2022 6:00:29 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
 Iniciar sesión de forma exitosa
------------------------------------------------------------------------
-[Test worker] ERROR  -     Test failed at step: Hugo Alberto opens the Pagina principal page ui
-[Test worker] ERROR  -     Invalid URL: index.php
+----------------------------------------------------------------------
 </pre>
 </span>
 </div>
@@ -157,7 +126,7 @@ Iniciar sesión de forma exitosa
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.2</a> at 22/02/2022, 5:55:31 p. m.</p>
+<a href="http://www.gradle.org">Gradle 7.2</a> at 22/02/2022, 6:00:42 p. m.</p>
 </div>
 </div>
 </body>

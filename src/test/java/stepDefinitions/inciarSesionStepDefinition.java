@@ -1,6 +1,9 @@
 package stepDefinitions;
 
 import io.cucumber.java.Before;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
@@ -29,55 +32,37 @@ public class inciarSesionStepDefinition
 
     paginaPrincipalPageUI paginaPrincipal = new paginaPrincipalPageUI();
 
-    //Preparamos el Stage, del escenario para el usuario
-    /*@Before
-    public void setStage()
-    {
-        setTheStage(new OnlineCast());
-    }*/
     @Before
     public void configurarNavegador()
     {
-        HugoAlberto.can(BrowseTheWeb.with(navegadorWeb));
+        HugoAlberto.can(
+                BrowseTheWeb.with(navegadorWeb)
+        );
     }
 
-    @Dado("^El usuario (.*) desea iniciar sesion en la aplicacion$")
+    @Given("^El usuario (.*) desea iniciar sesion en la aplicacion$")
     public void elUsuarioDeseaIniciarSesionEnLaAplicacion(String nombre)
     {
         HugoAlberto.wasAbleTo(
                 Open.browserOn(paginaPrincipal)
         );
-
-        /*theActorCalled(nombre)
-                .can(BrowseTheWeb.with(navegadorWeb));
-
-        theActorInTheSpotlight()
-                .wasAbleTo(Open.browserOn(paginaPrincipalPageUI));*/
     }
 
-    @Cuando("Ingresa el usuario {string} y contrasena {string}")
+    @When("Ingresa el usuario {string} y contrasena {string}")
     public void ingresaElUsuarioYContrasena(String usuario, String contrasena)
     {
-        /*theActorInTheSpotlight().wasAbleTo(
-                iniciarSesionTask.credencialesDeAcceso(usuario, contrasena)
-        );*/
         HugoAlberto.wasAbleTo(
                 iniciarSesionTask.credencialesDeAcceso(usuario, contrasena)
         );
     }
 
-    @Entonces("^Ingresa a pagina principal y valida el usuario (.*)$")
+    @Then("^Ingresa a pagina principal y valida el usuario (.*)$")
     public void ingresaAPaginaPrincipalYValidaElUsuario(String usuarioLogueado)
     {
-        //System.out.println("usuarioLogueado: " + usuarioLogueado);
-        //System.out.println("usuarioLogueado(): " + usuarioLogueado());
-        //System.out.println("usuarioLogueado(): " + TEXT_NOMBRE_USUARIO_LOGUEADO.resolveFor(theActorInTheSpotlight()).getText());
-
-        /*theActorInTheSpotlight().should(
+        HugoAlberto.should(
                 seeThat(
                         usuarioLogueado(), IsEqual.equalTo(usuarioLogueado)
                 )
-        );*/
-        HugoAlberto.should(seeThat(usuarioLogueado(), IsEqual.equalTo(usuarioLogueado)));
+        );
     }
 }
