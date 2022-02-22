@@ -4,24 +4,16 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.java.es.Cuando;
-import io.cucumber.java.es.Dado;
-import io.cucumber.java.es.Entonces;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Open;
-import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.thucydides.core.annotations.Managed;
 import org.hamcrest.core.IsEqual;
 import org.openqa.selenium.WebDriver;
 import tasks.iniciarSesionTask;
 import userInterfaces.paginaPrincipalPageUI;
-
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
-import static net.serenitybdd.screenplay.actors.OnStage.*;
-import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static questions.verificarUsuarioQuestion.usuarioLogueado;
-import static userInterfaces.bandejaDeUsuarioPageUI.TEXT_NOMBRE_USUARIO_LOGUEADO;
 
 public class inciarSesionStepDefinition
 {

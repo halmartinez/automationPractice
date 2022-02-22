@@ -4,7 +4,6 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static userInterfaces.iniciarSesionPageUI.BOTON_SIGN_IN;
 import static userInterfaces.iniciarSesionPageUI.INPUT_CONTRASENA;

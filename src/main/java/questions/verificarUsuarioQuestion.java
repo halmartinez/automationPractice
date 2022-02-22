@@ -1,7 +1,6 @@
 package questions;
 
 import net.serenitybdd.screenplay.Question;
-
 import static userInterfaces.bandejaDeUsuarioPageUI.TEXT_NOMBRE_USUARIO_LOGUEADO;
 
 public class verificarUsuarioQuestion
