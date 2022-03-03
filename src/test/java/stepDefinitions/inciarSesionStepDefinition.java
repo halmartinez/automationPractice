@@ -12,12 +12,13 @@ import org.hamcrest.core.IsEqual;
 import org.openqa.selenium.WebDriver;
 import tasks.iniciarSesionTask;
 import userInterfaces.paginaPrincipalPageUI;
+
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static questions.verificarUsuarioQuestion.usuarioLogueado;
 
 public class inciarSesionStepDefinition
 {
-    @Managed(driver = "edge")
+    @Managed(driver = "chrome")
     private WebDriver navegadorWeb;
 
     Actor HugoAlberto = new Actor("Hugo Alberto");

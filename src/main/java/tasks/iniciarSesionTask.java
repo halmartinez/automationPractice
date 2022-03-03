@@ -5,9 +5,9 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-import static userInterfaces.iniciarSesionPageUI.BOTON_SIGN_IN;
-import static userInterfaces.iniciarSesionPageUI.INPUT_CONTRASENA;
-import static userInterfaces.iniciarSesionPageUI.INPUT_EMAIL;
+import static userInterfaces.iniciarSesionYRegistrarUsuarioPageUI.BOTON_SIGN_IN;
+import static userInterfaces.iniciarSesionYRegistrarUsuarioPageUI.INPUT_CONTRASENA;
+import static userInterfaces.iniciarSesionYRegistrarUsuarioPageUI.INPUT_EMAIL;
 import static userInterfaces.paginaPrincipalPageUI.LNK_SIGN_IN;
 
 public class iniciarSesionTask implements Task

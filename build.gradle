@@ -86,7 +86,7 @@ tasks.withType(Test) {
 }
 
 wrapper {
-    gradleVersion = '7.0.2'
+    gradleVersion = '8.0'
 }
 
 jacocoTestReport {
