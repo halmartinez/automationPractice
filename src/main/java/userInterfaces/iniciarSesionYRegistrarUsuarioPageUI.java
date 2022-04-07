@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 
 public class iniciarSesionYRegistrarUsuarioPageUI extends PageObject
 {
-    // Ítems para iniciar sesión
+    /** Ítems para iniciar sesión */
     public static final Target INPUT_EMAIL =
             Target.the("Input del correo")
                     .located(By.id("email"));
@@ -19,7 +19,7 @@ public class iniciarSesionYRegistrarUsuarioPageUI extends PageObject
             Target.the("Clic en el botón para iniciar sesión")
                     .located(By.id("SubmitLogin"));
 
-    // Ítems para registrar usuario
+    /** Ítems para registrar usuario */
     public static final Target INPUT_EMAIL_CREAR_USUARIO =
             Target.the("Input de la contraseña")
                     .located(By.id("email_create"));

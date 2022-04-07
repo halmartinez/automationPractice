@@ -45,7 +45,7 @@ public class inciarSesionStepDefinition
     public void ingresaElUsuarioYContrasena(String usuario, String contrasena)
     {
         HugoAlberto.wasAbleTo(
-                iniciarSesionTask.credencialesDeAcceso(usuario, contrasena)
+                iniciarSesionTask.conCredencialesDeAcceso(usuario, contrasena)
         );
     }
 
@@ -54,7 +54,7 @@ public class inciarSesionStepDefinition
     {
         HugoAlberto.should(
                 seeThat(
-                        usuarioLogueado(), IsEqual.equalTo(usuarioLogueado)
+                        usuarioLogueado(usuarioLogueado), IsEqual.equalTo(usuarioLogueado)
                 )
         );
     }

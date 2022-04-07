@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Iniciar Sesión" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-03-03T21:07:57" hostname="HAL-MARTINEZ" time="10.462">
+<testsuite name="Iniciar Sesión" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-04-07T22:55:07" hostname="DESKTOP-4GPPID6" time="16.107">
   <properties/>
-  <testcase name="Iniciar sesión de forma exitosa" classname="Iniciar Sesión" time="10.462"/>
+  <testcase name="Iniciar sesión de forma exitosa" classname="Iniciar Sesión" time="16.107"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/hugo.martinez/IdeaProjects/automationPracticeEjercicio/src/test/resources/features/login.feature
-[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Users/hugo.martinez/IdeaProjects/automationPracticeEjercicio/src/test/resources/features/login.feature is not under the 'features' directory. Requirements report will not be correctly generated!
+  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/humar/IdeaProjects/automationPracticeEjercicio/src/test/resources/features/login.feature
+[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Users/humar/IdeaProjects/automationPracticeEjercicio/src/test/resources/features/login.feature is not under the 'features' directory. Requirements report will not be correctly generated!
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
  |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
@@ -13,14 +13,15 @@
 
 Iniciar sesión de forma exitosa(iniciar-sesión;iniciar-sesión-de-forma-exitosa)
 --------------------------------------------------------------------------------
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Not using automatically driver download
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using msedgedriver 100.0.1185.29 (resolved driver for Edge 100)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as C:\Users\humar\.cache\selenium\msedgedriver\win64\100.0.1185.29\msedgedriver.exe
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging...}
-Starting ChromeDriver 99.0.4844.51 (d537ec02474b5afe23684e7963d538896c63ac77-refs/branch-heads/4844@{#875}) on port 21519
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {browserName: MicrosoftEdge, loggingPrefs: org.openqa.selenium.logging..., ms:edgeOptions: {}}
+Starting MSEdgeDriver 100.0.1185.29 (1feddedadb2184120dec3f8943e514a865a2930a) on port 47819
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-mar. 03, 2022 4:08:00 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+abr. 07, 2022 5:55:11 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 [Test worker] INFO  - 
   _____   ___   ___   _____     ___     _     ___   ___   ___   ___  

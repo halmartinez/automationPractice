@@ -1,3 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Iniciar Sesión","Iniciar sesión de forma exitosa","SUCCESS","2022-03-03T16:07:58.2357732-05:00[America/Bogota]","0.0","10.16"
-"Registrar usuario","Registro de usuario exitoso","ERROR","2022-03-02T17:25:51.6572516-05:00[America/Bogota]","0.0","0.42"
+"Carrito de Compras","Hacer una compra y hacer el checkin","PENDING","2022-04-07T16:14:54.9738968-05:00[America/Bogota]","0.0","0.81"
+"Iniciar Sesión","Iniciar sesión de forma exitosa","SUCCESS","2022-04-07T17:55:07.465688-05:00[America/Bogota]","0.0","15.8"
+"Registrar usuario","Registro de usuario exitoso","ERROR","2022-04-07T16:14:54.9858651-05:00[America/Bogota]","0.0","52.8"

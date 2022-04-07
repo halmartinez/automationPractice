@@ -31,7 +31,7 @@ public class iniciarSesionTask implements Task
         );
     }
 
-    public static iniciarSesionTask credencialesDeAcceso(String usuario, String password)
+    public static iniciarSesionTask conCredencialesDeAcceso(String usuario, String password)
     {
         return instrumented(iniciarSesionTask.class, usuario, password);
     }
