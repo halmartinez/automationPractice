@@ -1,0 +1,13 @@
+
+L
+java:S26961"6Make the enclosing method "static" or remove this set.(÷ÆŒÊ
+G
+java:S1068",Remove this unused "filePath" private field.(œË†ïşÿÿÿÿ
+C
+java:S1068"-Remove this unused "sheetName" private field.(¨É÷¸
+k	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş©øıÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¿æŒä
+h
+java:S2095/"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(ş©øıÿÿÿÿ
+e
+java:S20950"JUse try-with-resources or close this "XSSFWorkbook" in a "finally" clause.(«æıËûÿÿÿÿ

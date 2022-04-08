@@ -1,0 +1,10 @@
+
+D
+java:S1068")Remove this unused "email" private field.(ˆ££¿øÿÿÿÿ
+A
+java:S1068"+Remove this unused "country" private field.(³‘ãÁ
+G
+java:S1068",Remove this unused "fullname" private field.(ŸèŸœûÿÿÿÿ
+\	java:S107"BConstructor has 11 parameters, which is greater than 7 authorized.(¼ÇŞúÿÿÿÿ
+W	java:S107H"=Method has 11 parameters, which is greater than 7 authorized.(œ“±âüÿÿÿÿ
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÊÃ£’ûÿÿÿÿ
